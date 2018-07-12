@@ -19,7 +19,7 @@ body {
 }
 
 textarea, iframe {
-	width: 500px;
+	width: 490px;
 	height: 85vh;
 	resize: none;
 	outline: none;

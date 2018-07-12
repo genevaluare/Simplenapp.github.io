@@ -106,10 +106,10 @@ if(location.hash.replace('#', '') != '') {
 	}*/
 }
 
-$(window).keydown(function(event) {
+window.onkeydown = function(event) {
 	if(event.ctrlKey && event.keyCode == 78) { 
 		var win = window.open(pageUrl, '_blank');
 		win.focus();
 		event.preventDefault(); 
 	}
-});
+};

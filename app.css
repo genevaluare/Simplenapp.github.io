@@ -37,6 +37,11 @@ p, span, textarea, iframe, #content {
 	font-size: 16px;
 }
 
+#ctntm {
+	height: 85vh;
+	overflow: auto;
+}
+
 #options {
 	font-family: Consolas;
 }

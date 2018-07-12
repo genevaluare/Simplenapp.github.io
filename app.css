@@ -12,13 +12,13 @@ body {
 	overflow: hidden;
 }
 
-@media only screen and (max-width: 500px) {
-	body, textarea, input, iframe, #ctntm {
+@media only screen and (max-width: 530px) {
+	body, textarea, input, iframe {
 		width: calc(100vw - 2 * 15px);
 	}
 }
 
-textarea, iframe, #ctntm {
+textarea, iframe {
 	width: 500px;
 	height: 85vh;
 	resize: none;

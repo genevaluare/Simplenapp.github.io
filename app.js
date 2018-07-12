@@ -105,3 +105,11 @@ if(location.hash.replace('#', '') != '') {
 		document.getElementById('contentm').innerHTML = "<iframe src='data:text/html;charset=utf-8;base64," + strDecD(location.hash.replace('#', ''), -1) + "'></iframe>";
 	}*/
 }
+
+$(window).keydown(function(event) {
+	if(event.ctrlKey && event.keyCode == 78) { 
+		var win = window.open(pageUrl, '_blank');
+		win.focus();
+		event.preventDefault(); 
+	}
+});

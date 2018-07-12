@@ -13,12 +13,12 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-	body, textarea, input, iframe, #contentm {
+	body, textarea, input, iframe, #ctntm {
 		width: calc(100vw - 2 * 15px);
 	}
 }
 
-textarea, iframe, #contentm {
+textarea, iframe, #ctntm {
 	width: 500px;
 	height: 85vh;
 	resize: none;

@@ -42,6 +42,14 @@ p, span, textarea, iframe, #content {
 	overflow: auto;
 }
 
+#ctntm::-webkit-scrollbar {
+	width: 5px;
+}
+ 
+#ctntm::-webkit-scrollbar-thumb {
+	background: #666; 
+}
+
 #options {
 	font-family: Consolas;
 }

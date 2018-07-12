@@ -8,8 +8,8 @@ var letterpairs = ["TH", "HE", "AN", "RE", "ER", "IN", "ON", "AT", "ND", "ST", "
 
 var toBeExcluded = [" ", "\n", "\t", "\r", ".", ",", "!", "?", "(", ")", "[", "]", "{", "}", "@", "#", "$", "%", "^", "&", "*", "-", "_", "=", "+", ":", ";"];
 var shortHandMin = 5000;
-var pageUrl = "http://simplen.ga";
-pageUrl = "http://simplen.ga";
+var pageUrl = "http://simplen.github.io";
+pageUrl = "http://simplen.github.io";
 
 function shortenS(str) {
 	var finStr = '';

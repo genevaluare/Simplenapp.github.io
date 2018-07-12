@@ -1,0 +1,73 @@
+html, textarea, button, input {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	/*max-*/width: 500px;
+	display: table;
+	table-layout: fixed;
+	margin: auto;
+	padding: 15px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+	body, textarea, input, iframe {
+		width: calc(100vw - 2 * 15px);
+	}
+}
+
+textarea, iframe {
+	width: 500px;
+	height: 85vh;
+	resize: none;
+	outline: none;
+	border: none;
+}
+
+input {
+	width: 500px;
+	font-family: Consolas;
+	border: none;
+	outline: none;
+}
+
+p, span, textarea, iframe, #content {
+	font-size: 16px;
+}
+
+#options {
+	font-family: Consolas;
+}
+
+#copiedLink {
+	font-family: Consolas;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	background: #424242;
+	color: #fff;
+	padding: 5px;
+	font-weight: bold;
+}
+
+#linktopage {
+	opacity: 0;
+	height: 0;
+}
+
+#options a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}

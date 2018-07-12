@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simplen</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+	<body>
+		<!--div id="about">Some about information here!</div-->
+		<div id="copiedLink" style="display: none;">Link copied to clipboard.</div>
+		<div id="content">
+			<input placeholder="Untitled" id="inp">
+			<div id="options">
+				<a onclick="qrCode();">qr code</a>
+				<a onclick="copyLink();">copy link</a>
+				<a href="#" target="_blank">new</a>
+				<a href="#about" target="_blank">about</a>
+				<input id="linktopage">
+			</div><br><br>
+			<div id="contentm">
+				<textarea placeholder="Words or tags,
+	It's up to you." onkeyup="newData(this, document.getElementById('inp'));"></textarea>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

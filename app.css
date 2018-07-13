@@ -37,11 +37,6 @@ p, span, textarea, iframe, #content {
 	font-size: 16px;
 }
 
-#ctntm {
-	height: 85vh;
-	overflow: auto;
-}
-
 #ctntm::-webkit-scrollbar {
 	width: 5px;
 }

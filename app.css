@@ -59,6 +59,8 @@ input {
 #linktopage {
 	opacity: 0;
 	height: 0;
+	position: fixed;
+	top: -100vh;
 }
 
 #other {

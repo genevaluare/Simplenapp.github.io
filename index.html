@@ -8,20 +8,19 @@
 		<link rel="shortcut icon" href="logotransparent.png">
 	</head>
 	<body>
-		<!--div id="about">Some about information here!</div-->
 		<div id="copiedLink" style="display: none;">Link copied to clipboard.</div>
+		<input placeholder="Untitled" id="inp">
+		<div id="other">
+			<a href="http://twitter.com/simplenapp" target="_blank">Twitter</a>
+		</div>
+		<div id="options">
+			<a onclick="qrCode();">qr code</a>
+			<a onclick="copyLink();">copy link</a>
+			<a href="#" target="_blank">new</a>
+			<a href="#about" target="_blank">about</a>
+			<input id="linktopage">
+		</div><br><br>
 		<div id="content">
-			<input placeholder="Untitled" id="inp">
-			<div id="other">
-				<a href="http://twitter.com/simplenapp" target="_blank">Twitter</a>
-			</div>
-			<div id="options">
-				<a onclick="qrCode();">qr code</a>
-				<a onclick="copyLink();">copy link</a>
-				<a href="#" target="_blank">new</a>
-				<a href="#about" target="_blank">about</a>
-				<input id="linktopage">
-			</div><br><br>
 			<div id="ctntm">
 				<textarea autofocus="" placeholder="Words or tags,
 	It's up to you." onkeyup="newData(this, document.getElementById('inp'));"></textarea>

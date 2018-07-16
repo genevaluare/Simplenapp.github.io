@@ -99,17 +99,6 @@ if(location.hash == "#about" || (localStorage.getItem("visitedfirst") != "yes" &
 }
 
 if(location.hash.replace('#', '') != '') {
-	//if(strDecD(location.hash.replace('#', ''), 0).replace("<", "") == strDecD(location.hash.replace('#', ''), 0)) {
-		document.getElementById('content').innerHTML = strDecD(location.hash.replace('#', ''));
-	/*} else {
-		document.getElementById('content').innerHTML = "<iframe src='data:text/html;charset=utf-8;base64," + strDecD(location.hash.replace('#', ''), -1) + "'></iframe>";
-	}*/
+	document.getElementById('content').innerHTML = strDecD(location.hash.replace('#', ''));
+	/*document.getElementById('content').innerHTML = "<iframe src='data:text/html;charset=utf-8;base64," + strDecD(location.hash.replace('#', ''), -1) + "'></iframe>";*/
 }
-
-window.onkeydown = function(event) {
-	if(event.ctrlKey && event.keyCode == 78) { 
-		var win = window.open(pageUrl, '_blank');
-		win.focus();
-		event.preventDefault(); 
-	}
-};

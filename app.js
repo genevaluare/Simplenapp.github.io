@@ -7,7 +7,7 @@ var toBeExcluded = [" ", "\n", "\t", "\r", ".", ",", "!", "?", "(", ")", "[", "]
 
 var shortHandMin = 5000;
 
-var ads = ["Random posts, random anything on <a href='http://gazu.ga' target='_blank'>gazu.ga</a>!", "Social networking without tracking - <a href='http://flownet.cf' target='_blank'>Try Flow</a>!", "Your product, here. FREE. <a href='http://simplenapp.github.io#PGgzPlNpbXBsZW4gQURTITwvaDM+PGJyPjxwPkRvIHlvdSBoYXZlIGEgcHJvZHVjdD8gUHJvbW90ZSBpdCBoZXJlLCBmb3IgPGI+RlJFRTwvYj4uIEp1c3QgZW50ZXIgdGhlIEhUTUwgY29kZSBvZiB5b3VyIGFkLjwvcD48YnI+PHA+PGI+Tk9URTwvYj46IEV2ZXJ5IHNpbmdsZSBhZCBpcyBjaGVja2VkIGJ5IGEgaHVtYW4gYmVmb3JlIGRpc3BsYXkhIEltYWdlcyBhcmUgbm90IGFsbG93ZWQuPC9wPjxicj48Zm9ybSBhY3Rpb249J2h0dHBzOi8vZ2lmbGUuMDAwd2ViaG9zdGFwcC5jb20vdC9hZHNvbnNpbXBsZW4ucGhwJyBtZXRob2Q9J3Bvc3QnPjxpbnB1dCBuYW1lPSdzJyBwbGFjZWhvbGRlcj0nRW50ZXIgSFRNTC4uLic+PGlucHV0IHR5cGU9J3N1Ym1pdCcgc3R5bGU9ImNvbG9yOiAjZmZmOyBiYWNrZ3JvdW5kOiAjNmJhM2ZmOyBib3JkZXItcmFkaXVzOiAxMDBweDsgcGFkZGluZzogOHB4IDE2cHg7IGJvcmRlcjogbm9uZTsgY3Vyc29yOiBwb2ludGVyOyIgdmFsdWU9J1Byb21vdGUgeW91cnNlbGYhJz4=' target='_blank'>Try today</a>."];
+var ads = ["Random posts, random anything on <a href='http://gazu.ga' target='_blank'>gazu.ga</a>!", "Social networking without tracking - <a href='http://flownet.cf' target='_blank'>Try Flow</a>!", "Your product, here. FREE. <a href='http://simplenapp.github.io#PGgzPlNpbXBsZW4gQURTITwvaDM+PGJyPjxwPkRvIHlvdSBoYXZlIGEgcHJvZHVjdD8gUHJvbW90ZSBpdCBoZXJlLCBmb3IgPGI+RlJFRTwvYj4uIEp1c3QgZW50ZXIgdGhlIEhUTUwgY29kZSBvZiB5b3VyIGFkLjwvcD48YnI+PHA+PGI+Tk9URTwvYj46IEV2ZXJ5IHNpbmdsZSBhZCBpcyBjaGVja2VkIGJ5IGEgaHVtYW4gYmVmb3JlIGRpc3BsYXkhIEltYWdlcyBhcmUgbm90IGFsbG93ZWQuPC9wPjxicj48Zm9ybSBhY3Rpb249J2h0dHBzOi8vZ2lmbGUuMDAwd2ViaG9zdGFwcC5jb20vdC9hZHNvbnNpbXBsZW4ucGhwJyBtZXRob2Q9J3Bvc3QnPjxpbnB1dCBuYW1lPSdzJyBwbGFjZWhvbGRlcj0nRW50ZXIgSFRNTC4uLic+PGlucHV0IHR5cGU9J3N1Ym1pdCcgc3R5bGU9ImNvbG9yOiAjZmZmOyBiYWNrZ3JvdW5kOiAjNmJhM2ZmOyBib3JkZXItcmFkaXVzOiAxMDBweDsgcGFkZGluZzogOHB4IDE2cHg7IGJvcmRlcjogbm9uZTsgY3Vyc29yOiBwb2ludGVyOyIgdmFsdWU9J1Byb21vdGUgeW91cnNlbGYhJz4=' target='_blank'>Try today</a>.", "<twitter>Twitter</twitter> Check us out <a href='https://twitter.com/simplenapp' target='_blank'>here</a>!"];
 
 var pageUrl = "http://simplenapp.github.io";
 pageUrl = "http://simplenapp.github.io";
@@ -98,6 +98,8 @@ function generateAd() {
 	var token = Math.floor(Math.random() * ads.length);
 	if(Math.floor(Math.random() * 2) == 0) {
 		document.getElementById("ad").innerHTML = "<adcover><ad>AD</ad>" + ads[token] + "</adcover><br><br>";
+	} else {
+		document.getElementById("ad").innerHTML = "";
 	}
 }
 

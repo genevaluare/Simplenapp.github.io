@@ -1,4 +1,4 @@
-function newData(ta, inp) {
+function newData(ta) {
 	location.hash = strEncD(ta.value);
 }
 
@@ -11,6 +11,8 @@ var ads = ["Random posts, random anything on <a href='http://gazu.ga' target='_b
 
 var pageUrl = "http://simplenapp.github.io";
 pageUrl = "http://simplenapp.github.io";
+
+var about = "PGgzPldoYXQncyBTaW1wbGVuPzwvaDM+CjxwPldpdGggPGI+U2ltcGxlbjwvYj4geW91IGNhbiBjcmVhdGUgeW91ciBvd24gd2VicGFnZSwgd2l0aCBhIHVuaXF1ZSBsaW5rLiBMYXRlciBvbiwgeW91IGNhbiDwn5SXc2hhcmUgeW91ciBjcmVhdGlvbiB3aXRoIG90aGVycywgZXZlbiB0aHJvdWdoIGEgcXIgY29kZS48L3A+CjxwPjxiPvCfkqEgSWRlYXM8L2I+Ojxicj4K8J+SrCBFeHByZXNzIHlvdXJzZWxmIHdpdGggbG9uZ2VyIGRlc2NyaXB0aW9ucyBhbmQgcG9zdHM8YnI+CvCfjqggTWFrZSBjYW52YXMgb3IgYXNjaWkgY3JlYXRpb25zPGJyPgrwn5K7IENyZWF0ZSB5b3VyIG93biBhcHAKPC9wPgo8YSBocmVmPSIjIiB0YXJnZXQ9Il9ibGFuayI+PGJ1dHRvbiBzdHlsZT0nY29sb3I6ICNmZmY7IGJhY2tncm91bmQ6ICM2YmEzZmY7IGJvcmRlci1yYWRpdXM6IDEwMHB4OyBwYWRkaW5nOiA4cHggMTZweDsgYm9yZGVyOiBub25lOyBjdXJzb3I6IHBvaW50ZXI7Jz5TdGFydCBjcmVhdGluZzwvYnV0dG9uPjwvYT4=";
 
 function shortenS(str) {
 	var finStr = '';
@@ -96,7 +98,7 @@ function copyLink() {
 
 function generateAd() {
 	var token = Math.floor(Math.random() * ads.length);
-	if(Math.floor(Math.random() * 2) == 0) {
+	if(Math.floor(Math.random() * 20) == 0 && location.hash != about) {
 		document.getElementById("ad").innerHTML = "<adcover><ad>AD</ad>" + ads[token] + "</adcover><br><br>";
 	} else {
 		document.getElementById("ad").innerHTML = "";
@@ -104,7 +106,7 @@ function generateAd() {
 }
 
 if(location.hash == "#about" || (localStorage.getItem("visitedfirst") != "yes" && location.hash.replace('#', '') == '')) {
-	location.hash = "PGgzPldoYXQncyBTaW1wbGVuPzwvaDM+CjxwPldpdGggPGI+U2ltcGxlbjwvYj4geW91IGNhbiBjcmVhdGUgeW91ciBvd24gd2VicGFnZSwgd2l0aCBhIHVuaXF1ZSBsaW5rLiBMYXRlciBvbiwgeW91IGNhbiDwn5SXc2hhcmUgeW91ciBjcmVhdGlvbiB3aXRoIG90aGVycywgZXZlbiB0aHJvdWdoIGEgcXIgY29kZS48L3A+CjxwPjxiPvCfkqEgSWRlYXM8L2I+Ojxicj4K8J+SrCBFeHByZXNzIHlvdXJzZWxmIHdpdGggbG9uZ2VyIGRlc2NyaXB0aW9ucyBhbmQgcG9zdHM8YnI+CvCfjqggTWFrZSBjYW52YXMgb3IgYXNjaWkgY3JlYXRpb25zPGJyPgrwn5K7IENyZWF0ZSB5b3VyIG93biBhcHAKPC9wPgo8YSBocmVmPSIjIiB0YXJnZXQ9Il9ibGFuayI+PGJ1dHRvbiBzdHlsZT0nY29sb3I6ICNmZmY7IGJhY2tncm91bmQ6ICM2YmEzZmY7IGJvcmRlci1yYWRpdXM6IDEwMHB4OyBwYWRkaW5nOiA4cHggMTZweDsgYm9yZGVyOiBub25lOyBjdXJzb3I6IHBvaW50ZXI7Jz5TdGFydCBjcmVhdGluZzwvYnV0dG9uPjwvYT4=";
+	location.hash = about;
 	localStorage.setItem("visitedfirst", "yes");
 }
 

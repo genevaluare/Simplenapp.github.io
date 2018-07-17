@@ -3,15 +3,11 @@
 	<head>
 		<title>Simplen</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="app.css">
 		<link rel="shortcut icon" href="logotransparent.png">
 	</head>
 	<body>
 		<div id="copiedLink" style="display: none;">Link copied to clipboard.</div>
-		<div id="other">
-			<a href="http://twitter.com/simplenapp" target="_blank">Twitter</a>
-		</div>
 		<div id="options">
 			<a onclick="qrCode();">qr code</a>
 			<a onclick="copyLink();">copy link</a>
@@ -22,8 +18,7 @@
 		<span id="ad"></span>
 		<div id="content">
 			<div id="ctntm">
-				<textarea autofocus="" placeholder="Words or tags,
-	It's up to you." onkeyup="newData(this);"></textarea>
+				<textarea autofocus="" placeholder="Words or tags,&#10;	It's up to you." onkeyup="newData(this);"></textarea>
 			</div>
 		</div>
 		<script src="app.js"></script>

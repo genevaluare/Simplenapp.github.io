@@ -110,9 +110,9 @@ function gtE(id) {
 	return document.getElementById(id);
 }
 
-gtE('qr').addEventListner("click", qrCode);
-gtE('cl').addEventListner("click", copyLink);
-gtE('t').addEventListner("keyup", newData);
+document.getElementById('qr').addEventListner("click", qrCode);
+document.getElementById('cl').addEventListner("click", copyLink);
+document.getElementById('t').addEventListner("keyup", newData);
 
 if(location.hash == "#about" || (localStorage.getItem("visitedfirst") != "yes" && location.hash.replace('#', '') == '')) {
 	location.hash = about;

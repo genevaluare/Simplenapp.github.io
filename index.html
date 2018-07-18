@@ -9,8 +9,8 @@
 	<body>
 		<div id="copiedLink" style="display: none;">Link copied to clipboard.</div>
 		<div id="options">
-			<a onclick="qrCode();">qr code</a>
-			<a onclick="copyLink();">copy link</a>
+			<a id='qr'>qr code</a>
+			<a id='cl'>copy link</a>
 			<a href="#" target="_blank">new</a>
 			<a href="#about" target="_blank">about</a>
 			<input id="linktopage">
@@ -18,7 +18,7 @@
 		<span id="ad"></span>
 		<div id="content">
 			<div id="ctntm">
-				<textarea autofocus="" placeholder="Words or tags,&#10;	It's up to you." onkeyup="newData(this);"></textarea>
+				<textarea autofocus id="t" placeholder="Words or tags,&#10;	It's up to you."></textarea>
 			</div>
 		</div>
 		<script src="app.js"></script>

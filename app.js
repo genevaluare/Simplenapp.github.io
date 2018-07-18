@@ -1,4 +1,5 @@
-function newData(ta) {
+function newData() {
+	var ta = gtE('t');
 	location.hash = strEncD(ta.value);
 }
 
@@ -104,6 +105,14 @@ function generateAd() {
 		document.getElementById("ad").innerHTML = "";
 	}
 }
+
+function gtE(id) {
+	return document.getElementById(id);
+}
+
+gtE('qr').addEventListner("click", qrCode);
+gtE('cl').addEventListner("click", copyLink);
+gtE('t').addEventListner("keyup", newData);
 
 if(location.hash == "#about" || (localStorage.getItem("visitedfirst") != "yes" && location.hash.replace('#', '') == '')) {
 	location.hash = about;

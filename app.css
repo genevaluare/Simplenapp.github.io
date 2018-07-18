@@ -27,7 +27,7 @@ textarea {
 	border: none;
 }
 
-textarea::placeholder {
+::placeholder {
 	font-style: italic;
 }
 

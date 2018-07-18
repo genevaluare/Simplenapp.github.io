@@ -110,10 +110,6 @@ function gtE(id) {
 	return document.getElementById(id);
 }
 
-document.getElementById('qr').addEventListner("click", qrCode);
-document.getElementById('cl').addEventListner("click", copyLink);
-document.getElementById('t').addEventListner("keyup", newData);
-
 if(location.hash == "#about" || (localStorage.getItem("visitedfirst") != "yes" && location.hash.replace('#', '') == '')) {
 	location.hash = about;
 	localStorage.setItem("visitedfirst", "yes");

@@ -1,6 +1,6 @@
 function newData() {
 	var ta = document.getElementById('t');
-	location.hash = strEncD(target.value);
+	location.hash = strEncD(ta.value);
 }
 
 var letterpairs = ["TH", "HE", "AN", "RE", "ER", "IN", "ON", "AT", "ND", "ST", "ES", "EN", "OF", "TE", "ED", "OR", "TI", "HI", "AS", "TO", "LL", "EE", "SS", "OO", "TT", "FF", "RR", "NN", "PP", "CC", "th", "he", "an", "re", "er", "in", "on", "at", "nd", "st", "es", "en", "of", "te", "ed", "or", "ti", "hi", "as", "to", "ll", "ee", "ss", "oo", "tt", "ff", "rr", "nn", "pp", "cc", "I ", "i ", "li", "LI", "tr", "TR"];
